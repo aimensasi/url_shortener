@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'capybara/rspec'
 
 # Specs in this file have access to a helper object that includes
 # the UrlsHelper. For example:

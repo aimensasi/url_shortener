@@ -1,0 +1,9 @@
+<% if @errors.present? %>
+	<div class="error" style="background: red; color: #fff;"><%= @errors.first %></div>
+<% end %>
+
+
+<%= form_for @url do |f|%>
+	<%= f.text_field :long_url, :placeholder => "Long Url" %>
+	<%= f.submit "Shorten" %>
+<% end %>

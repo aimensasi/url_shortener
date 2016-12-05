@@ -16,7 +16,7 @@ RSpec.describe Url, type: :model do
 	context "creates: " do
 		it "takes in one valid long_url" do
 			expect{ Url.create(long_url: proper_long_url) }.not_to raise_error
-		end
+		end 
 
 		it "won't create an entry if only one valid long_url is being supplied" do
 			Url.create(long_url: proper_long_url)
